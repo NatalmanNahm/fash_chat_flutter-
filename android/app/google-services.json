@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539987659791",
+    "firebase_url": "https://flash-chat-a6694.firebaseio.com",
+    "project_id": "flash-chat-a6694",
+    "storage_bucket": "flash-chat-a6694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539987659791:android:5a3967f16622039381a77a",
+        "android_client_info": {
+          "package_name": "co.natalnahm.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539987659791-v6p5rn3b3e84jhu6clsn1s0rsnqjqh71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLIGKEivamkZGOucS75RbdpwuTc2SjzxE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539987659791-v6p5rn3b3e84jhu6clsn1s0rsnqjqh71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
