@@ -36,13 +36,13 @@ class _ChatScreenState extends State<ChatScreen> {
     }
   }
 
-  void getStreamMessage() async {
-   await for( var snapshot in _firestore.collection('messages').snapshots()){
-     for(var message in snapshot.documents){
-       print(message.data);
-     }
-   }
-  }
+//  void getStreamMessage() async {
+//   await for( var snapshot in _firestore.collection('messages').snapshots()){
+//     for(var message in snapshot.documents){
+//       print(message.data);
+//     }
+//   }
+//  }
 
   @override
   Widget build(BuildContext context) {
@@ -88,7 +88,8 @@ class _ChatScreenState extends State<ChatScreen> {
                       messageTextController.clear();
                       _firestore.collection('messages').add({
                         'text': messageText,
-                        'sender': loggedInUser.email
+                        'sender': loggedInUser.email,
+                        'time': FieldValue.serverTimestamp()
                       });
                     },
                     child: Text(
@@ -138,8 +139,7 @@ class MessagesStream extends StatelessWidget {
         return Expanded(
           child: ListView(
             reverse: true,
-            padding:
-            EdgeInsets.symmetric(horizontal: 10.00, vertical: 20.0),
+            padding: EdgeInsets.symmetric(horizontal: 10.00, vertical: 20.0),
             children: messagebubbles
           ),
         );
